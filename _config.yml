@@ -12,7 +12,7 @@ sass:
   style: :nested
 
 
-# baseurl: /FrontFolio
+baseurl: /FrontFolio
 
 
 # fall back javascript disable
