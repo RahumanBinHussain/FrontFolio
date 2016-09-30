@@ -14,8 +14,3 @@ sass:
 
 # baseurl: /FrontFolio
 
-
-# fall back javascript disable
-projectNoscript: >
-  ** No javscript babe!
-
