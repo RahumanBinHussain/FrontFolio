@@ -7,17 +7,11 @@ port: 8000
 
 sass:
   sass_dir: assets/css
-<<<<<<< HEAD
   style: :compressed
 
-=======
-  style: :nested
-  
->>>>>>> origin/gh-pages
 baseurl: /FrontFolio
 
 # fall back javascript disable
-
 projectNoscript: >
   ** No javscript babe!
 
