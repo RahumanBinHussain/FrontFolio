@@ -3,13 +3,17 @@
 markdown: kramdown
 permalink: pretty
 
+
 port: 8000
+
 
 sass:
   sass_dir: assets/css
   style: :compressed
 
+
 baseurl: /FrontFolio
+
 
 # fall back javascript disable
 projectNoscript: >
