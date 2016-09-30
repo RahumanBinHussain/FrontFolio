@@ -1,0 +1,16 @@
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+port: 8000
+
+sass:
+  sass_dir: assets/css
+  style: :nested
+
+# fall back javascript disable
+
+projectNoscript: >
+  ** No javscript babe!
+

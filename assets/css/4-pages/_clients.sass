@@ -1,0 +1,161 @@
+.clients-wrapper
+    padding: 100px 0
+    background: #F6F6F8
+    box-sizing: border-box
+
+    h1
+        text-align: center
+        margin-bottom: 15px
+
+.client-belt
+    width: 100%
+
+.control-auto
+    max-width: 767px
+    margin: 80px auto 0
+    position: relative
+
+.client-unit
+    position: relative
+    z-index: 1
+    display: none
+
+    &.active-client
+        +display(flex)
+
+    .client-avatar
+        min-width: 275px
+        text-align: center
+
+        img
+            text-align: center
+            border-radius: 50%
+
+        strong
+            display: block
+            letter-spacing: 2px
+            font-size: 0.85em
+            color: #606060
+
+        em
+            color: #808080
+            font-weight: 400
+            font-size: 0.8em
+
+    .client-msg
+
+        p
+            letter-spacing: 0.4px
+
+            b
+                color: #404040
+
+
+
+.clients-icons
+    width: 767px
+    margin: 100px auto 0
+    +display(flex)
+    +align-items(flex-end)
+    +justify-content(space-around)
+
+    .client
+        width: 25%
+        height: 90px
+        cursor: pointer
+        margin: 0 10px
+        background:
+            size: contain
+            repeat: no-repeat
+            position: center
+
+        &.active-client
+            box-shadow: 0px 4px 0px #65C84E
+
+
+
+.carousel-controls
+    position: absolute
+    width: 100%
+
+    > span
+        color: #c5c5c5
+        font-size: 2.5em
+        cursor: pointer
+        @include animate-time(320ms)
+
+        &:hover
+            color: #65C84E
+
+    .prev
+        +position(absolute, -100px null null -70px)
+
+    .next
+        +position(absolute, -100px -90px null null)
+
+
+.control-mobile
+    text-align: center
+    display: none
+
+    span
+        display: inline-block
+        +size(20px)
+        border-radius: 50%
+        border: 1px solid #c0c0c0
+        margin: 0 10px
+        cursor: pointer
+
+        &.active-client
+            border: 1px solid #65C84E
+
+@media (max-width: 800px)
+    .control-auto
+        max-width: 700px
+
+    .clients-icons
+        margin-top: 40px
+
+    .carousel-controls
+        .prev
+            +position(absolute, -100px null null -10px)
+
+        .next
+            +position(absolute, -100px -15px null null)
+
+@media (max-width: 768px)
+    .clients-wrapper
+        padding: 40px 0
+
+    .control-auto
+        margin-top: 30px
+
+    .carousel-controls
+        display: none
+
+    .client-unit
+
+        &.active-client
+            display: block
+
+        .client-avatar
+            margin-bottom: 30px
+
+        .client-msg
+            max-width: 600px
+            margin: 0 auto
+            padding: 0 20px
+
+    .clients-icons
+        margin-top: 50px
+
+    .control-mobile
+        display: block
+        margin-top: 50px
+
+    .clients-icons
+        display: none
+
+
+
+

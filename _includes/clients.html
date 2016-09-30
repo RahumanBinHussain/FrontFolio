@@ -1,0 +1,71 @@
+<section class="clients-wrapper">
+
+    <h1>Happy Clients!</h1>
+    <hr>
+
+
+    <div class="control-mobile">
+
+    {% for client in site.data.settings.clients %}
+
+        <span class="mob-controller"></span>
+
+    {% endfor %}
+
+    </div> <!-- end control mobile -->
+
+    <div class="client-belt">
+
+        <div class="control-auto">
+
+
+            {% for client in site.data.settings.clients %}
+
+                <div class="client-unit">
+
+                    <div class="client-avatar">
+
+                        <img src="assets/img/clients/{{ client.avatar }}" alt="">
+
+                        <strong> {{ client.name }} </strong>
+
+                        <em> {{ client.title }} </em>
+
+                    </div>  <!-- end client avatar -->
+
+                    <div class="client-msg">
+
+                        {{ client.file }}
+
+                    </div>
+
+                </div> <!-- end clients unit -->
+
+            {% endfor %}
+
+
+            <div class="carousel-controls">
+
+                <span class="prev fa fa-angle-left" aria-hidden="true"></span>
+
+                <span class="next fa fa-angle-right" aria-hidden="true"></span>
+
+            </div> <!-- end controls -->
+
+        </div>
+
+    </div> <!-- end client belt -->
+
+
+    <div class="clients-icons">
+
+        {% for client in site.data.settings.clients %}
+
+        <div class="client" style="background-image: url(/assets/img/clients/{{ client.logo }});"></div>
+
+        {% endfor %}
+
+
+    </div> <!-- end clients icons -->
+
+</section>

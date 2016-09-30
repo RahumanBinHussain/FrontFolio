@@ -1,0 +1,33 @@
+<header>
+
+    <div class="wrapper-background">
+
+
+    <div class="container">
+
+        <div class="logo">  </div>
+
+        <nav>
+
+          {% for item in site.data.settings.menu %}
+
+            <a href="{{ item.url }}">{{ item.name }}</a>
+
+          {% endfor %}
+
+        </nav>
+
+        <div class="phone-number">
+            <span>
+                {{ site.data.settings.call }}
+            </span>
+        </div>
+
+        <h1>Hellow World! </h1>
+        <p> <label> Rahuman Bin Hussain - </label> {{ site.data.settings.favorites }}</p>
+
+    </div> <!-- end container -->
+
+    </div>
+
+</header>

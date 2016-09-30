@@ -1,0 +1,61 @@
+#header settings
+
+menu:
+- {name: Portfolio, url: "#portfolio"}
+- {name: Service, url: "#service"}
+- {name: About, url: "#"}
+- {name: Contact, url: "#contact"}
+
+call: +94772 868 491
+
+favorites:  Designer, Developer, Traveller
+
+
+
+#service
+
+service: I create and build websites to communicate a feeling of joy and comfort that shall invite the user to come back.
+
+
+#case study
+
+featured-title: Ayurveda - Traditional Treatment
+
+featured-para: Kind fowl beginning, every man saying, so fish without replenish made won’t good, face i. Beginning. Which good Moving in without given won’t hath fish said, sea beast herb a waters to form creepeth our man open shall subdue.
+
+featured-link: http://www.kidney.lk/
+
+
+#work section
+
+projects:
+- {name: Being Kind, folder: 'proj-1'}
+- {name: wow.lk, folder: 'proj-2'}
+- {name: Ayurweda, folder: 'proj-3'}
+- {name: Being Kind, folder: 'proj-1'}
+- {name: wow.lk, folder: 'proj-2'}
+- {name: Ayurweda, folder: 'proj-3'}
+
+
+#clients section
+
+clients:
+- {avatar: 'client-1.jpg', name: 'Muhammed Moiz', title: 'Co Founder - wow.lk', file: '<p> <b> wow ipsum dolor sit amet, </b> consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur, corporis repudiandae id mollitia blanditiis voluptas vero placeat, saepe optio totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur. corporis repudiandae id mollitia blanditiis voluptas</p>', logo: 'logo1.png'}
+- {avatar: 'client-2.jpg', name: 'Akbar Ali', title: 'Chief Executive - Akbar Tea', file: '<p> <b> Akbar ipsum dolor sit amet, </b> consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur, corporis repudiandae id mollitia blanditiis voluptas vero placeat, saepe optio totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur. corporis repudiandae id mollitia blanditiis voluptas</p>', logo: 'logo2.png'}
+- {avatar: 'client-3.jpg', name: 'Amrin Izzath', title: 'Head Of Finance - teamone.lk', file: '<p> <b> Team ipsum dolor sit amet, </b> consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur, corporis repudiandae id mollitia blanditiis voluptas vero placeat, saepe optio totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur. corporis repudiandae id mollitia blanditiis voluptas</p>', logo: 'logo3.png'}
+
+
+#Footer
+
+facebook: http://www.facebook.com/rahu88man
+
+google-plus: https://plus.google.com/u/2/108129384271070524513
+
+git-hub: https://github.com/RahumanBinHussain
+
+tagline: I’m a passionate web designer, developer and photographer
+
+
+
+
+
