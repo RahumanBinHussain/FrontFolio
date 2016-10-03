@@ -6,7 +6,7 @@ header
         repeat: no-repeat
     z-index: 600
     position: relative
-    border: 15px solid #CAC0A5
+    border: 5px solid #CAC0A5
     border-bottom: none
     box-sizing: border-box
 
@@ -18,6 +18,7 @@ header
     right: 0
     width: 100%
     height: 100%
+    padding-top: 15px
 
     .logo
         width: 50px
@@ -28,30 +29,52 @@ header
 
     nav
         float: left
-        margin: 50px 30px 0 0
+        margin: 35px 30px 0 0
 
-        a
+        li
             display: inline-block
-            padding-left: 50px
-            color: #d5d5d5
-            font-size: 16px
+            list-style: none
+            margin: 0 30px
+            position: relative
 
-            &.active
-                color: #95EDDC
+            a
+                padding: 0 0 15px 0
+                color: #d5d5d5
+                font-size: 16px
+                display: block
+
+                &:hover, &:focus, &:visited
+                    &:after
+                        opacity: 1
+                        @include transform ( translateY( -10px ) )
+
+                &:after
+                    content: ''
+                    display: block
+                    position: absolute
+                    left: 0px
+                    right: 0px
+                    bottom: 0
+                    height: 2px
+                    background: #CAC0A5
+                    opacity: 0
+                    @include animate-nav( all, 320ms )
+                    @include transform ( translateY( 0px ) )
+
 
     .phone-number
         float: right
-        margin-top: 45px
+        margin-top: 50px
 
         span
-            color: #95eddc
+            color: #CAC0A5
             letter-spacing: 0.1em
-            font-size: 1.2em
+            font-size: 1.1em
             font-family: "Slabo 27px",serif
 
     h1
         clear: both
-        color: #95eddc
+        color: #CAC0A5
         letter-spacing: 0.05em
         text-align: center
         padding-top: 200px

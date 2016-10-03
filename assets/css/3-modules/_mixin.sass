@@ -4,3 +4,18 @@
     -webkit-transition: all $time ease
     -ms-transition: all $time ease
     -o-transition: all $time ease
+
+// header animation
+@mixin animate-nav ($attr, $time)
+    transition: $attr $time ease
+    -webkit-transition: $attr $time ease
+    -moz-transition: $attr $time ease
+    -ms-transition: $attr $time ease
+    -o-transition: $attr $time ease
+
+@mixin transform ($val)
+    transform: $val
+    -webkit-transform: $val
+    -moz-transform: $val
+    -ms-transform: $val
+    -o-transform: $val
