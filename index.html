@@ -28,7 +28,13 @@
     {% include footer.html %}
 
 <script src="assets/js/jquery-2.1.1.min.js"></script>
+<script src="assets/js/jquery.stellar.js"></script>
+<script src="assets/js/viewportchecker.js"></script>
 <script src="assets/js/functions.js"></script>
+
+$(function(){
+    $(window).stellar();
+});
 
 </body>
 </html>

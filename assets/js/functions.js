@@ -4,13 +4,14 @@ $(function() {
   workslider(); // work slider
   dataload(); // work contents loading..
   happyclient(); // testimonials
+  stellar();// Parallel scrolling
+
 
   jQuery("header h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '75px' }); // Fit size
 
 });
 
 // smoothScroll to the sections
-
 function smoothScroller(duration) {
     $('a[href^="#"]').on('click', function(event) {
 
@@ -24,6 +25,10 @@ function smoothScroller(duration) {
     }
 
     });
+}
+
+function stellar() {
+    $(window).stellar();
 }
 
 function workslider() {
