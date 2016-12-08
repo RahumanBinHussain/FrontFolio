@@ -19,3 +19,10 @@
     -moz-transform: $val
     -ms-transform: $val
     -o-transform: $val
+
+@mixin scroller-arrow ($attr, $time)
+    animation: $attr $time infinite
+    -webkit-animation: $attr $time infinite
+    -moz-animation: $attr $time infinite
+    -ms-animation: $attr $time infinite
+    -o-animation: $attr $time infinite

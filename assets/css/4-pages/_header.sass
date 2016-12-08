@@ -6,7 +6,7 @@ header
         repeat: no-repeat
     z-index: 600
     position: relative
-    border: 5px solid #CAC0A5
+    border: 10px solid #fff
     border-bottom: none
     box-sizing: border-box
 
@@ -39,27 +39,14 @@ header
 
             a
                 padding: 0 0 15px 0
-                color: #d5d5d5
+                color: #999
                 font-size: 16px
                 display: block
+                transform: translateY(0px)
+                transition: all 320ms ease
 
                 &:hover, &:focus, &:visited
-                    &:after
-                        opacity: 1
-                        @include transform ( translateY( -10px ) )
-
-                &:after
-                    content: ''
-                    display: block
-                    position: absolute
-                    left: 0px
-                    right: 0px
-                    bottom: 0
-                    height: 2px
-                    background: #CAC0A5
-                    opacity: 0
-                    @include animate-nav( all, 320ms )
-                    @include transform ( translateY( 0px ) )
+                    transform: translateY(-10px)
 
 
     .phone-number
@@ -98,6 +85,75 @@ header
         label
             color: #303030
             font-size: 1em
+
+    a
+        text-align: center
+        display: block
+
+        .scroller
+            color: #CAC0A5
+            font-size: 60px
+            position: absolute
+            bottom: 50px
+            text-align: center
+            @include scroller-arrow(scroller, 2s)
+            text-shadow: white 0 0 .1em
+
+            &:hover
+                animation-play-state: paused
+
+@keyframes scroller
+    0%
+        transform: translate3d(0px, 0px, 0px)
+
+    50%
+        transform: translate3d(0, 30px, 0px)
+
+    100%
+        transform: translate3d(0px, 0px, 0px)
+
+
+.about-buwah
+    width: 100%
+    height: 100%
+    background: #FFFFFF
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    transform: translateX(-200%) rotate(-100deg)
+    transition: all 2s ease
+
+    .fa
+        position: absolute
+        top: 20px
+        right: 20px
+        cursor: pointer
+        font-size: 3em
+
+.splash2
+    transform: translateX(0) rotate(0)
+
+.podi
+    transform: translateX(200%) rotate(100deg)
+
+.about-img
+    width: 50%
+    height: 100%
+    float: left
+    background-image: url(../img/www.jpg)
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 980px)
     .container

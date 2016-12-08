@@ -1,10 +1,19 @@
 .service-wrapper
     text-align: center
     padding: 150px 0
-    background: #E2E2E2
+    background: #F6F6F8
+    border-left: 10px solid #fff
+    border-right: 10px solid #fff
 
     h1
         text-align: center
+
+        span
+            padding: 0 10px
+            border: 1px solid #CAC0A5
+            border-radius: 5px
+            font-size: 35px
+            margin-right: 5px
 
     p
         max-width: 760px
@@ -13,14 +22,17 @@
         padding: 0 30px
 
 .service
-    display: flex
-    max-width: 660px
+    max-width: 1170px
     margin: 50px auto
-    justify-content : space-between
+
+.service-block
+    float: left
+    width: 33%
+    margin-bottom: 15px
 
     span
         display: block
-        font-size: 4.5em
+        font-size: 10em
         color: #404040
 
     label
@@ -28,6 +40,7 @@
         text-transform: uppercase
         line-height: 2.5em
         font-weight: 300
+        color: #606060
 
 @media (max-width: 480px)
     .service-wrapper

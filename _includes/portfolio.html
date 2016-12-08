@@ -1,0 +1,33 @@
+<section class="portfolio-details-wrapper">
+
+        <div class="thumb-wrap">
+
+            <div class="thumb-container">
+
+                  {% for project in site.data.settings.projects %}
+
+                      <label for="{{ project.folder }}">
+
+                      <a href="{{ project.href }}">
+
+                        <div class="thumb-unit" data-folder="{{ project.folder }}">
+                          <img src="/assets/img/work/{{project.folder}}/thumb.jpg" alt="{{ project.name }}" />
+                        </div>
+
+                        <div class="thumb-overlay">
+                          <div class="thumboverlay-center">
+                            <strong>{{ project.name }}</strong>
+                          </div>
+                        </div>
+
+                      </a>
+
+                      </label>
+
+                  {% endfor %}
+
+            </div>
+
+        </div>
+
+</section>

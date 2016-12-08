@@ -1,12 +1,12 @@
 #header settings
 
 menu:
-- {name: Portfolio, url: "#portfolio"}
+- {name: Portfolio, url: "/portfolio/"}
 - {name: Service, url: "#service"}
-- {name: About, url: "#"}
+- {name: About, url: "#", blow: splash}
 - {name: Contact, url: "#contact"}
 
-call: +94772 868 491
+call: +94768 246 483
 
 favorites:   Front.end.developer
 
@@ -14,7 +14,7 @@ favorites:   Front.end.developer
 
 #service
 
-service: I create and build websites to communicate a feeling of joy and comfort.
+service: I create and build websites to communicate a feeling of joy and comfort. I create and build websites to communicate a feeling of joy and comfort.
 
 
 #case study
@@ -29,12 +29,10 @@ featured-link: http://www.wow.lk/
 #work section
 
 projects:
-- {name: Being Kind, folder: 'proj-1'}
-- {name: wow.lk, folder: 'proj-2'}
-- {name: Ayurweda, folder: 'proj-3'}
-- {name: Being Kind, folder: 'proj-1'}
-- {name: wow.lk, folder: 'proj-2'}
-- {name: Ayurweda, folder: 'proj-3'}
+- {name: Being Kind, folder: 'proj-1', href: 'http://www.google.lk' }
+- {name: wow.lk, folder: 'proj-2', href: 'http://www.wow.lk'}
+- {name: Fitbid, folder: 'proj-4', href: 'http://www.wow.lk/wowdocroot/content//1.3/atg/2016/landingpages/fitbit/' }
+- {name: Ayurweda, folder: 'proj-3', href: 'http://www.kidney.lk'}
 
 
 #clients section
@@ -47,7 +45,7 @@ clients:
 
 #Footer
 
-facebook: http://www.facebook.com/rahu88man
+codepen: codepen.io/rahu88man/
 
 google-plus: https://plus.google.com/u/2/108129384271070524513
 

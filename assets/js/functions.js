@@ -5,11 +5,29 @@ $(function() {
   dataload(); // work contents loading..
   happyclient(); // testimonials
   $(window).stellar();// Parallel scrolling
+  blowme()
 
 
   jQuery("header h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '75px' }); // Fit size
 
 });
+
+
+function blowme() {
+
+  $('.splash').on('click', function(){
+
+    $('.about-buwah').addClass('splash2');
+
+      $('.goback').on('click', function(){
+
+        $('.about-buwah').removeClass('splash2', 1);
+
+      });
+
+  });
+
+}
 
 // smoothScroll to the sections
 function smoothScroller(duration) {

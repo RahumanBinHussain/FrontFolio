@@ -13,7 +13,7 @@
 
               {% for item in site.data.settings.menu %}
 
-                <li> <a href="{{ item.url }}">{{ item.name }}</a> </li>
+                <li> <a href="{{ item.url | prepend: site.github.url }}" class="{{ item.blow }}">{{ item.name }}</a> </li>
 
               {% endfor %}
 
@@ -28,10 +28,33 @@
         </div>
 
         <h1>Hellow World! </h1>
+
         <p> <label> Rahuman Bin Hussain - </label> {{ site.data.settings.favorites }}</p>
+
+        <a href="#service"> <span class="scroller"> <i class="fa fa-angle-down" aria-hidden="true"></i> </span> </a>
 
     </div> <!-- end container -->
 
     </div>
+
+
+    <div class="about-buwah">
+
+        <span class="fa fa-times goback" aria-hidden="true"></span>
+
+        <div class="about-img">
+
+        xxx
+
+        </div>
+
+
+        <div class="about-content">
+
+        xxx
+
+        </div>
+
+    </div> <!-- end about buwah -->
 
 </header>
