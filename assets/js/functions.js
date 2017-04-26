@@ -1,11 +1,11 @@
 $(function() {
 
   smoothScroller(1000); // smoothScroller
-  workslider(); // work slider
   dataload(); // work contents loading..
   happyclient(); // testimonials
   $(window).stellar();// Parallel scrolling
-  blowme()
+  blowme();
+  shuffleJs();
 
 
   jQuery("header h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '75px' }); // Fit size
@@ -45,16 +45,9 @@ function smoothScroller(duration) {
     });
 }
 
-function workslider() {
-
-    $('.thumb-unit').click(function() {
-        $('.work-slider').css('left' , '-100%');
-        $('.work-info').show();
-    });
-
-    $('.back').click(function() {
-        $('.work-slider').css('left' , '0');
-        $('.work-info').hide();
+function shuffleJs() {
+    var filterizd = $('.filtr-container').filterizr({
+         //options object
     });
 }
 

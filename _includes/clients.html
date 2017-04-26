@@ -4,7 +4,7 @@
 
     <div class="control-mobile">
 
-    {% for client in site.data.settings.clients %}
+    {% for client in site.data.clients.clients %}
 
         <span class="mob-controller"></span>
 
@@ -17,13 +17,13 @@
         <div class="control-auto">
 
 
-            {% for client in site.data.settings.clients %}
+            {% for client in site.data.clients.clients %}
 
                 <div class="client-unit">
 
                     <div class="client-avatar">
 
-                        <img src="assets/img/clients/{{ client.avatar }}" alt="">
+                        <img src="/assets/img/clients/{{ client.avatar }}" alt="">
 
                         <strong> {{ client.name }} </strong>
 
@@ -57,9 +57,9 @@
 
     <div class="clients-icons">
 
-        {% for client in site.data.settings.clients %}
+        {% for client in site.data.clients.clients %}
 
-        <div class="client" style="background-image: url(assets/img/clients/{{ client.logo }});"></div>
+        <div class="client" style="background-image: url(/assets/img/clients/{{ client.logo }});"></div>
 
         {% endfor %}
 

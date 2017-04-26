@@ -1,58 +1,8 @@
-#header settings
-
-menu:
-- {name: Portfolio, url: "/portfolio/"}
-- {name: Service, url: "#service"}
-- {name: About, url: "#", blow: splash}
-- {name: Contact, url: "#contact"}
-
-call: +94768 246 483
-
-favorites:   Front.end.developer
-
-
-
-#service
-
-service: I create and build websites to communicate a feeling of joy and comfort. I create and build websites to communicate a feeling of joy and comfort.
-
-
-#case study
-
-featured-title: wOw.lk - Online Shopping Sri Lanka
-
-featured-para: Wow.lk is the largest e-commerce website in Sri Lanka, operated by Digital Commerce Lanka (Pvt) Ltd, a group company of Dialog Axiata PLC.
-
-featured-link: http://www.wow.lk/
-
-
-#work section
-
-projects:
-- {name: Being Kind, folder: 'proj-1', href: 'http://www.google.lk' }
-- {name: wow.lk, folder: 'proj-2', href: 'http://www.wow.lk'}
-- {name: Fitbid, folder: 'proj-4', href: 'http://www.wow.lk/wowdocroot/content//1.3/atg/2016/landingpages/fitbit/' }
-- {name: Ayurweda, folder: 'proj-3', href: 'http://www.kidney.lk'}
-
-
 #clients section
-
 clients:
 - {avatar: 'client-1.jpg', name: 'Muhammed Moiz', title: 'Co Founder - wow.lk', file: '<p> <b> wow ipsum dolor sit amet, </b> consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur, corporis repudiandae id mollitia blanditiis voluptas vero placeat, saepe optio totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur. corporis repudiandae id mollitia blanditiis voluptas</p>', logo: 'logo1.png'}
 - {avatar: 'client-2.jpg', name: 'Akbar Ali', title: 'Chief Executive - Akbar Tea', file: '<p> <b> Akbar ipsum dolor sit amet, </b> consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur, corporis repudiandae id mollitia blanditiis voluptas vero placeat, saepe optio totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur. corporis repudiandae id mollitia blanditiis voluptas</p>', logo: 'logo2.png'}
 - {avatar: 'client-3.jpg', name: 'Amrin Izzath', title: 'Head Of Finance - teamone.lk', file: '<p> <b> Team ipsum dolor sit amet, </b> consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur, corporis repudiandae id mollitia blanditiis voluptas vero placeat, saepe optio totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis perferendis facere, fuga eum porro maxime sapiente sed quia consequatur. corporis repudiandae id mollitia blanditiis voluptas</p>', logo: 'logo3.png'}
-
-
-#Footer
-
-codepen: codepen.io/rahu88man/
-
-google-plus: https://plus.google.com/u/2/108129384271070524513
-
-git-hub: https://github.com/RahumanBinHussain
-
-tagline: I’m a passionate web designer, developer and photographer
-
 
 
 

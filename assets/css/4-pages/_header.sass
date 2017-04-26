@@ -8,7 +8,7 @@ header
     position: relative
     border: 10px solid #fff
     border-bottom: none
-    box-sizing: border-box
+    @include box-sizing(border-box)
 
 .wrapper-background
     background: rgba(0, 0, 0, 0.9)
@@ -26,6 +26,10 @@ header
         float: left
         margin: 40px 40px 0 0
         background-image: url(../img/logo.png)
+        display: block
+        text-indent: -9999px
+        padding-top: 1%
+        overflow: hidden
 
     nav
         float: left
@@ -41,13 +45,12 @@ header
                 padding: 0 0 15px 0
                 color: #999
                 font-size: 16px
+                letter-spacing: 1.5px
                 display: block
-                transform: translateY(0px)
                 transition: all 320ms ease
 
-                &:hover, &:focus, &:visited
-                    transform: translateY(-10px)
-
+                &:hover
+                    color: #93886b
 
     .phone-number
         float: right
@@ -58,6 +61,7 @@ header
             letter-spacing: 0.1em
             font-size: 1.1em
             font-family: "Slabo 27px",serif
+            border-bottom: 1px dotted
 
             &:before
                 font-family: FontAwesome
@@ -72,9 +76,10 @@ header
         color: #CAC0A5
         letter-spacing: 0.05em
         text-align: center
-        padding-top: 200px
+        padding-top: 150px
         font-size: 75px
         font-weight: 600
+        margin: 0 0 50px
         font-family: 'Electrolize', sans-serif
 
     p
@@ -113,48 +118,6 @@ header
         transform: translate3d(0px, 0px, 0px)
 
 
-.about-buwah
-    width: 100%
-    height: 100%
-    background: #FFFFFF
-    position: absolute
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    transform: translateX(-200%) rotate(-100deg)
-    transition: all 2s ease
-
-    .fa
-        position: absolute
-        top: 20px
-        right: 20px
-        cursor: pointer
-        font-size: 3em
-
-.splash2
-    transform: translateX(0) rotate(0)
-
-.podi
-    transform: translateX(200%) rotate(100deg)
-
-.about-img
-    width: 50%
-    height: 100%
-    float: left
-    background-image: url(../img/www.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 980px)
     .container
         padding: 0 20px
@@ -184,9 +147,13 @@ header
                 font-size: 1em
 
 @media (max-width: 768px)
+    header
+        height: 75% !important
+
     .wrapper-background
+
         .logo
-            margin: 20px 40px 0 50%
+            margin: 20px 0 0 50%
 
         .phone-number
             display: none
@@ -194,6 +161,27 @@ header
         nav
             width: 100%
             text-align: center
+            margin-top: 20px
+
+        h1
+            padding-top: 100px
+            font-size: 50px
+
+@media (max-width: 480px)
+    header
+        height: 100% !important
+
+    .wrapper-background
+        p
+            font-size: 1.2em
+
+        nav
+            li
+                margin: 0 20px
+
+            a
+                font-size: 15px
+                font-weight: 600
 
 
 

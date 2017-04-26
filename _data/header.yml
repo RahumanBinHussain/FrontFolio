@@ -1,0 +1,9 @@
+#header settings
+menu:
+- {name: Portfolio, url: "#portfolio"}
+- {name: About, url: "#about", blow: splash}
+- {name: Contact, url: "#contact"}
+
+call: +94768 246 483
+
+favorites:   Front.end.developer
