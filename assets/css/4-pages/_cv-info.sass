@@ -1,0 +1,610 @@
+.about-page
+    width: 100%
+    float: left
+    z-index: 1000
+    border: 10px solid #fff
+    border-bottom: none
+    position: relative
+    background:
+        image: url(../img/header-background.jpg)
+        repeat: no-repeat
+
+.about-background
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    background-color: hsla(9, 100%, 81%, 0.07)
+    display: table
+    position:  relative
+
+    .header-contents
+        width: 100%
+        float: left
+
+    .logo
+        float: left
+        margin: 30px 0 0
+
+    .container
+        position: relative
+
+    .mobile-number
+        float: right
+        margin-top: 40px
+
+        span
+            letter-spacing: 2px
+            font-family: "Slabo 27px",serif
+            font-size: 22px
+            border-bottom: 1px dotted
+
+            &::before
+                content: '\f10b'
+                font-family: fontAwesome
+                padding-right: 5px
+
+.about_contents
+    max-width: 840px
+    margin: 180px auto 0
+    padding: 0 25px
+
+    p
+        font-size: 1.2em
+        color: #656565
+        line-height: 40px
+
+    .open_letter
+        &:first-letter
+            font-size: 4em
+            float: left
+            margin: 10px 15px 0 0
+
+
+.cv-info
+    width: 100%
+    float: left
+    background: #EAE5E5
+    padding: 50px 0
+
+    .title
+        width: 50%
+
+        h1
+            position: relative
+            display: inline-block
+            font-family: "Slabo 27px",serif
+            font-size: 3em
+            padding: 10px 0 0
+            margin: 0.5em 0 0
+
+            &:after
+                background: none
+
+        p
+            font-size: 22px
+            color: #454545
+
+        .title-animateRight,
+        .title-animateRightt
+            @include animate-time (900ms)
+            @include transform(translateX(10%))
+
+        .title-animateLeft,
+        .title-animateLeftt
+            @include animate-time (900ms)
+            @include transform(translateX(-10%))
+
+        .title-effect
+            @include transform(translateX(0))
+            opacity: 1
+
+    i
+        position: absolute
+        top: 0
+        color: #ffffff
+        font-size: 20px
+        @include border-radius(50px)
+
+.experience
+    .title
+        float: left
+        text-align: left
+        border-left: 1px solid #454545
+        padding: 0 0 50px 20px
+
+        h1
+            left: -110px
+            background: #EAE5E5
+            color: #4D4D4D
+
+        p
+            opacity: 0.5
+
+.education
+    background: #EBF0DF
+    margin-bottom: 300px
+    
+    .title
+        float: right
+        text-align: right
+        border-right: 1px solid #454545
+        padding: 0 20px 50px 0
+
+        h1
+            right: -110px
+            background: #EBF0DF
+            color: #334455
+
+        p
+            opacity: 0.5
+
+
+.center-contents
+    max-width: 960px
+    margin: 0 auto
+    text-align: center
+
+    .ex-wrapper
+        float: right
+        width: 90%
+        
+        i
+            background: rgba(0, 0, 0, 0.8)
+            padding: 12px
+            left: 30.5%
+
+    .edu-wrapper
+        float: right
+        width: 90%
+
+        i
+            background: rgba(138, 203, 130, 0.8)
+            padding: 14px 12px
+            left: 30%
+
+        .timeline-container 
+            h3
+                color: #334455
+
+    .timeline-container
+        width: 100%
+        float: left
+        margin-top: 50px
+        position: relative
+        padding-bottom: 35px
+
+        h3
+            margin: 0
+            font-weight: 400
+            font-size: 19px
+
+        &::before
+            background: #d5d5d5 none repeat scroll 0 0
+            content: ""
+            display: block
+            height: 100%
+            left: 33%
+            position: absolute
+            width: 1px
+
+        .timeline-position
+            width: 40%
+            float: left
+            text-align: right
+            padding-right: 15%
+            overflow: hidden
+
+            span
+                color: #909090
+                font-size: 16px
+
+        .timeline-contents
+            width: 60%
+            float: left
+            position: relative
+            text-align: left
+            overflow: hidden
+
+    
+.skill
+    background: #ffffff
+
+.skill-container
+    max-width: 1070px
+    margin: 0 auto
+    text-align: right
+
+    .title
+        border-right: 1px solid #454545
+        float: right
+        text-align: right
+        width: 50%
+        padding: 0 20px 50px 0
+
+        h1
+            position: relative
+            display: inline-block
+            right: -75px
+            color: #202020
+            font-family: "Slabo 27px",serif
+            font-size: 3.5em
+            background: #ffffff
+            padding: 10px 0 0
+            margin: 0.5em 0 0
+
+            &:after
+                background: none
+
+        p
+            font-size: 22px
+            color: #454545
+            @include animate-time (320ms)
+            @include transform(translateX(-20px))
+
+        .to_right
+            @include transform(translateX(0px))
+            opacity: 1
+
+.skill-contents
+    width: 60%
+    text-align: left
+    float: left
+    padding-left: 10%
+
+    .skill-buddies
+        max-width: 100%
+        margin: 0 auto
+
+    label
+        color: #505050
+        font-size: 17px
+        line-height: 35px
+        padding-left: 10px
+        font-weight: 400
+
+.sk-container
+    width: 100%
+    background-color: #e5e5e5
+    margin-bottom: 35px
+
+    .skills
+        text-align: right
+        padding-right: 0
+        height: 5px
+        position: relative
+        background-color: #81ce97
+
+        span
+            position: relative
+            top: -45px
+            right: -18px
+            color: #ffffff
+            color: #14d84c
+            padding:  5px 8px
+            @include border-radius(5px)
+            font-size: 13px
+            border: 1px solid #81ce97
+            font-weight: 600
+
+            &::after
+                border-color: #81ce97 transparent transparent
+                border-style: solid
+                border-width: 5px 5px 0
+                content: ""
+                left: 42%
+                position: absolute
+                top: 28px
+
+    .level-90
+        width: 90%
+
+    .level-85
+        width: 85%
+
+    .level-80
+        width: 80%
+
+    .level-65
+        width: 65%
+
+.codepen
+    text-align: left
+    background: #1B1A1F url(../img/bro.jpg)
+    background-size: cover
+    padding: 0 
+    overflow: hidden
+
+    .dark-background
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        width: 100%
+        display: table
+        background: rgba(0, 0, 0, 0.7)
+        position:  relative
+        padding: 125px 0                                           
+
+    .codepen-content
+        width: 100%
+        float: left
+
+        .penspot
+            @include animate-time (900ms)
+            @include transform(translateY(20%))
+            opacity: 0.2
+
+        .pengotchya
+            @include transform(translateY(-50%))
+            opacity: 1
+
+
+        h1
+            border-bottom: 1px solid #484444
+            color: #ffe6d5
+            display: inline-block
+            font-family: "Dancing Script",cursive
+            font-size: 30px
+            font-weight: 400
+            padding: 0 100px 15px 0
+            position: relative
+
+            &:after
+                background: #edd38a none repeat scroll 0 0
+                bottom: -1px
+                content: ""
+                height: 2px
+                left: 0
+                position: absolute
+                width: 144px
+
+            img
+                position: relative
+                top: 10px
+
+        a
+            color: #ffe6d5
+            font-size: 18px
+            font-weight: 500
+            letter-spacing: 2px
+            position: relative
+            top: 2%
+            @include animate-time (300ms)
+            text-align: center
+            font-weight: 600
+            display: inline-block
+
+
+            &:hover
+                &::after
+                    transform: translateX(25px)
+                    opacity: 1
+
+            &::after
+                content: '\f178'
+                font-family: fontAwesome
+                @include transform(translateX(10px))
+                @include animate-time (320ms)
+                opacity: 0.5
+                display: inline-block
+
+        p
+            color: #656565
+            width: 60%
+            margin-top: 5%
+            font-size: 18px
+
+@media (max-width: 768px)
+    .wrapper-background
+        .logo
+            margin: 15px 0 0 15px
+
+        .mobile-number
+            margin: 15px
+
+            span
+                font-size: 20px
+
+    .about_contents
+        margin: 150px auto 0
+        padding: 0 70px
+
+        p
+            font-size: 1.1em
+
+    .skill-container
+        .title
+            margin-right: 80px
+
+            h1
+                font-size: 2.5em
+                right: -60px
+
+            p
+                font-size: 18px
+    
+    .skill-container
+        .title
+            width: 58%
+
+    .skill-contents
+        width: 80%
+
+
+    .codepen
+        .dark-background
+            padding: 100px 40px
+
+        .codepen-content
+            p
+                width: 80%
+                font-size: 18px
+                color: #a0a0a0
+
+    .experience
+        .title
+            margin-right: 80px
+
+            h1
+                font-size: 2em
+                right: -60px
+
+            p
+                font-size: 20px
+
+    .education
+        .title
+            margin-left: 80px
+
+            h1
+                font-size: 2em
+                left: -70px
+
+            p
+                font-size: 20px
+    
+    .center-contents
+        .ex-wrapper,
+        .edu-wrapper
+            padding: 0 25px
+            width: 100%
+
+        .timeline-container
+            padding: 0
+
+            .timeline-position
+                span
+                    font-size: 14px
+
+            .timeline-contents
+                p
+                    font-size: 18px
+
+                i
+                    left: -72px
+
+    
+@media (max-width: 480px)
+    .about-background
+        .logo,
+        .mobile-number
+            width: 100%
+            text-align: center
+
+        .mobile-number
+            margin-top: 17px
+
+            span
+                font-size: 20px
+
+    .about_contents
+        width: 100%
+        float: left
+        margin: 30px 0 0
+        padding: 0 25px 25px
+
+        p
+            line-height: 35px
+            font-size: 1em
+        
+        .open_letter
+            &::first-letter
+                margin: 15px 15px 0 0
+
+    .about-page
+        border: none
+
+    .skill-container
+        .title
+            width: 70%
+    
+    .cv-info
+        .title
+            width: 70%
+
+
+    .center-contents
+        .timeline-container
+            margin-top: 40px
+            border-bottom: 1px solid #d5d5d5
+
+            &:last-child
+                border: none !important
+
+            &::before
+                background: none
+
+            .timeline-position
+                width: 100%
+                text-align: left
+                padding-right: 0
+                margin-bottom: 20px
+
+            .timeline-contents
+                width: 100%
+
+        .edu-wrapper
+            .timeline-position,
+            .timeline-contents
+                text-align: right
+
+    .codepen
+        .codepen-content
+            p
+                width: 100%
+
+
+@media (max-width: 375px)
+    .skill-container
+        .title
+            margin-right: 65px
+            padding: 0 20px 15px 0
+
+            h1
+                font-size: 2.2em
+                font-weight: 400
+
+    .skill-contents
+        width: 90%
+        margin-top: 10%
+
+    .codepen
+        .codepen-content
+            .pengotchya
+                @include transform(translateY(-10%))
+
+        .dark-background
+            padding: 75px 30px
+
+
+    .experience
+        .title
+            padding: 0 20px 30px 0
+
+            p
+                font-size: 18px
+
+    .education
+        .title
+            padding: 0 0 30px 20px
+
+            p
+                font-size: 18px
+
+    .cv-info
+        i
+            display: none
+
+                
+
+
+    
+
+
+
+
+
+
+

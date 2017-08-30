@@ -1,18 +1,26 @@
 .clients-wrapper
-    padding: 100px 0
+    padding: 150px 0
     background: #F6F6F8
     box-sizing: border-box
+    text-align: center
 
     h1
+        border-bottom: 1px solid #e5e5e5
+        color: #303030
+        display: inline
+        font-size: 1.6em
+        padding-bottom: 20px
+        position: relative
         text-align: center
-        margin-bottom: 15px
 
-        span
-            padding: 0 10px
-            border: 2px solid #CAC0A5
-            border-radius: 5px
-            font-size: 35px
-            margin-right: 5px
+        &:after
+            background: #becb81
+            bottom: -3px
+            content: ""
+            height: 4px
+            position: absolute
+            width: 50px
+            left: 40%
 
 .client-belt
     width: 100%
@@ -34,6 +42,7 @@
     .client-avatar
         min-width: 275px
         text-align: center
+        transition: all 600ms ease
 
         img
             text-align: center
@@ -51,9 +60,14 @@
             font-size: 0.8em
 
     .client-msg
+        transition: all 600ms ease
+        text-align: left
 
         p
             letter-spacing: 0.4px
+            transition: all 600ms ease
+            font-size: 16px
+            line-height: 2em
 
             b
                 color: #404040
@@ -96,10 +110,10 @@
             color: #65C84E
 
     .prev
-        +position(absolute, -100px null null -70px)
+        +position(absolute, -150px null null -70px)
 
     .next
-        +position(absolute, -100px -90px null null)
+        +position(absolute, -150px -90px null null)
 
 
 .control-mobile

@@ -20,6 +20,17 @@
     -ms-transform: $val
     -o-transform: $val
 
+// Translate
+@mixin translateX ($x)
+    @include transform(translateX($x))
+
+@mixin translateY ($y)
+    @include transform(translateY($y))
+
+@mixin scale ($scale)
+    @include transform(scale($scale))
+
+
 @mixin scroller-arrow ($attr, $time)
     animation: $attr $time infinite
     -webkit-animation: $attr $time infinite
@@ -31,4 +42,12 @@
     -webkit-box-sizing: $box-model
     -moz-box-sizing: $box-model
     box-sizing: $box-model
+
+
+// Border radius
+@mixin border-radius($radius)
+    -webkit-transform: $radius
+    -moz-transform: $radius
+    -ms-transform: $radius
+    border-radius: $radius
 

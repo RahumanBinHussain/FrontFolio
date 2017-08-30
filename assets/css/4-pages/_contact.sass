@@ -1,50 +1,124 @@
 .contact-wrapper
-    background: url(../img/map.jpg)
-    padding: 50px 0 80px
+    background:
+        image: url(../img/header-background11.jpg)
+        repeat: no-repeat
     text-align: center
-    margin-bottom: 300px
+    margin-bottom: 220px
+    width: 100%
+    float: left
+    position: relative
+    z-index: 5000
+
+.contact-background
+    background: rgba(25, 30, 33, 0.9)
+    width: 100%
+    float: left
+    padding: 125px 0
+
+.contact-left
+    width: 50%
+    float: left
+    text-align: right
+    padding-right: 10%
+    border-right: 1px dashed #35444A
+    overflow: hidden
 
     h1
+        color: #b8bf9a
         display: block
+        font-size: 35px
+        letter-spacing: 2px
+        text-transform: uppercase
+        margin: 0
+        font-family: "Slabo 27px",serif
+
+        span
+            display: block
+            font-size: 55px
 
     p
-        margin-top: 25px
+        font-family: "Open Sans",sans-serif
+        font-size: 18px
+        font-weight: 300
+        letter-spacing: 0
+        word-spacing: 0
+        color: #a0a0a0
+        margin-top: 10px
+
+    .contact-animate
+        @include animate-time (1s)
+        @include transform(translateX(10%))
+        opacity: 0
+
+    .contact-effect
+        @include transform(translateX(0))
+        opacity: 1
+
+.contact-right
+    width: 50%
+    float: left
 
     span
+        color: #becb81
         display: block
-        margin-top: 75px
-        font-size: 3em
-        font-family: "Slabo 27px",serif
+        font-size: 2em
         font-weight: 600
-        color: $black
         letter-spacing: 5px
-        padding-bottom: 45px
+        padding-bottom: 15%
+        word-spacing: 2px
 
     a
-        background: $dark-green
-        color: $white
-        padding: 10px 30px
-        font-size: 1.5em
+        border: 1px solid #becb81
+        color: #becb81
+        font-size: 26px
+        padding: 8px 19px
+        text-transform: full-width
+        @include animate-time(320ms)
+        display: inline
+        
+        &:hover
+            color: #101010
+            background: #becb81
+
+    .contact-zoomin
+        @include animate-time (1s)
+        @include transform(scale(1))
+        opacity: 0
+
+    .contact-zoomout
+        @include transform(scale(1.1))
+        opacity: 1
+
 
 @media (max-width: 768px)
-    .contact-wrapper
-        padding: 50px 0 100px
+    .contact-left,
+    .contact-right
+        text-align: right
+        width: 100%
+        padding: 0 35px
+        border: none
+
+    .contact-right
+        padding-top: 5%
+        margin-top: 5%
+        border-top: 1px dashed #35444A
+        padding-left: 10%
+        text-align: left
 
         span
-            font-size: 2.5em
+            padding-bottom: 5%
 
-@media (max-width: 360px)
-    .contact-wrapper
-        padding: 30px 0 70px
-
-        h1
-            font-size: 20px
-
+@media (max-width: 480px)
+    .contact-background
+        padding: 100px 0
+        
+    .contact-right
         span
-            font-size: 1.5em
-            letter-spacing: 2px
+            font-size: 1.3em
+            letter-spacing: 3px
+            padding-bottom: 15%
 
         a
-            font-size: 1em
+            font-size: 22px
 
 

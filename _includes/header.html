@@ -1,40 +1,56 @@
-<header data-stellar-background-ratio="0.5">
+<header data-stellar-background-ratio="0.5" class="home-page">
 
     <div class="wrapper-background">
 
+            <div class="header-contents">
 
-    <div class="container">
+                <div class="container">
+                
+                    <div class="logo"> <a href="index.html"> <img src="/assets/img/logo.png"> </a> </div>
+                    
+                    <div class="button-wrap">
+                    
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    
+                    </div>
 
-        <div class="logo"> <a href="index.html"> # </a> </div>
+                </div>
+            
+            </div>  <!-- end header contents -->
 
-        <nav>
+            <div class="header-body">
 
-            <ul>
+                <h4> Hellow World! </h4>
 
-              {% for item in site.data.header.menu %}
+                <h1> {{ site.data.header.myname }} </h1>
 
-                <li> <a href="{{ item.url | prepend: site.github.url }}" class="{{ item.blow }}">{{ item.name }}</a> </li>
+                <p> {{ site.data.header.favorites }} </p>
 
-              {% endfor %}
+                <a href="/about"> More About me </a>
 
-            </ul>
+            </div> <!-- end header body -->
 
-        </nav>
+    </div> <!-- end wrapper background -->
 
-        <div class="phone-number">
-            <span>
-                {{ site.data.header.call }}
-            </span>
-        </div>
+    <div class="menu-background">
+    
+            <nav>
 
-        <h1> Hellow World! </h1>
+                <ul>
 
-        <p> <label> Rahuman Bin Hussain - </label> {{ site.data.header.favorites }}</p>
+                    {% for item in site.data.header.menu %}
 
-        <a href="#about"> <span class="scroller"> <i class="fa fa-angle-down" aria-hidden="true"></i> </span> </a>
+                    <li> <a href="{{ item.url | prepend: site.github.url }}" class="{{ item.blow }}">{{ item.name }}</a> </li>
 
-    </div> <!-- end container -->
+                    {% endfor %}
+
+                </ul>
+
+            </nav>
 
     </div>
+
 
 </header>

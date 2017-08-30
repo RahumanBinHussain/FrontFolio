@@ -1,0 +1,53 @@
+<section class="cv-info experience">
+
+        <div class="center-contents">
+
+        	<div class="title">
+
+	    		<h1 class="title-animateLeft"> Experience </h1>
+				
+				<p class="title-animateRight"> I made decisions that I regret, and I took them as learning experiences... I'm human, not perfect, like anybody else.</p>
+
+    		</div>
+
+        	<div class="ex-wrapper">
+
+        	{% for emprise in site.data.experience.emprises %}
+
+		        <div class="timeline-container">
+
+		        	<i class="fa fa-briefcase" aria-hidden="true"></i>
+
+		        	<div class="timeline-position">
+
+		        		<div class="position-animate">
+
+			        		<h3> {{ emprise.name }} </h3>
+
+			        		<span> {{ emprise.period }}  </span>
+
+		        		</div>
+
+		        	</div> <!-- end position -->
+
+		        	<div class="timeline-contents">
+
+		        		<div class="contents-animate">
+
+			        		<h3> {{ emprise.company-name }} </h3>
+
+			        		<p> {{ emprise.description }} </p>
+
+		        		</div>
+		        		
+		        	</div> <!-- end time line contents -->
+
+		        </div> <!-- end time line container -->
+
+		    {% endfor %}
+
+	        </div> <!-- container wrapper -->
+
+        </div>
+
+</section> <!-- end less description -->

@@ -1,0 +1,28 @@
+emprises:
+  - { 
+      name: 'Senior UI Engineer',
+      period: 'August (2015) - Present',
+      company-name: 'wOw.lk - Digital Commerce Lanka',
+      description: 'Wow.lk is the largest e-commerce website in Sri Lanka, operated by Digital Commerce Lanka (Pvt) Ltd, a group company of Dialog Axiata PLC. The site was one of the pioneer websites in Sri Lanka and it offers a wide range of deals, original products with warranty, multiple payment options and island wide delivery, striving to offer its customers the complete shopping experience.'
+  }
+
+  - { 
+      name: 'Content Admin ',
+      period: 'December (2011) - Agust (2015)',
+      company-name: 'Anything.lk - Digital Commerce Lanka',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+  }
+
+  - { 
+      name: 'Web Designer & Front End Developer',
+      period: 'April - May  (2011)',
+      company-name: 'Beta Soft Computer Technology',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+  }
+
+  - { 
+      name: 'Content Admin',
+      period: 'January - April  (2011)',
+      company-name: 'Syntex Computer Technology',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+  }

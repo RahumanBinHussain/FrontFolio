@@ -1,9 +1,11 @@
 #header settings
 menu:
-- {name: Portfolio, url: "#portfolio"}
-- {name: About, url: "#about", blow: splash}
-- {name: Contact, url: "#contact"}
+- {name: Portfolio, url: "#portfolio", blow: point-break}
+- {name: About, url: "/about", blow: point-break}
+- {name: Contact, url: "#contact", blow: point-break}
 
 call: +94768 246 483
 
-favorites:   Front.end.developer
+myname: Rahuman Ibn Hussain
+
+favorites:    Front-end Developer | UI/UX Designer 

@@ -1,0 +1,19 @@
+wisdomz:
+  - { 
+      name: 'HND IT',
+      period: 'Jan 2009 - Dec 2010',
+      school: 'Advance Technical Institute',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+  }
+
+  - { 
+      name: 'Diploma in Computer Studies & hardware Engineering',
+      school: 'Beta Soft Computer Technology',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+  }
+
+  - { 
+      name: 'GCE Ordinar & Advance Level',
+      school: ' Welimada Muslim Maha Vidyalaya',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+  }

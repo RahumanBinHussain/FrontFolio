@@ -1,0 +1,53 @@
+<section class="cv-info education">
+
+    <div class="center-contents">
+
+    	<div class="title">
+
+    		<h1 class="title-animateRightt"> Education </h1>
+			
+			<p class="title-animateLeftt"> Lorem ipsum dolor sit amet, consectetur adipisicing elit consectetur adipisicing elit </p>
+
+    	</div>
+
+    	<div class="edu-wrapper">
+
+    	{% for wisdom in site.data.education.wisdomz %}
+
+	    	<div class="timeline-container">
+
+	    		<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+	
+	        	<div class="timeline-position">
+
+	        		<div class="position-animate">
+
+		        		<h3> {{ wisdom.name }} </h3>
+
+		        		<span> {{ wisdom.period }} </span>
+
+	        		</div>
+
+	        	</div> <!-- end position -->
+
+	        	<div class="timeline-contents">
+
+	        		<div class="contents-animate">
+
+		        		<h3> {{ wisdom.school }} </h3>
+
+		        		<p> {{ wisdom.description }} </p>
+
+	        		</div>
+	        		
+	        	</div> <!-- end time line contents -->
+
+	        </div> <!-- end time line container -->
+
+	    {% endfor %}
+
+        </div>
+
+    </div>
+
+</section> <!-- end less description -->

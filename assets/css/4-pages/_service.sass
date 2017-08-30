@@ -1,0 +1,101 @@
+.service-wrapper
+    width: 100%
+    float: left
+    padding: 0
+    background: #181E20
+    text-align: center
+
+.service-list
+    width: 100%
+    float: left
+
+    .grid-3
+        float: left
+        width: 33%
+        padding: 80px 50px
+        overflow: hidden
+        min-height: 412px
+
+    .bg-blue
+        background: #becb81
+
+        .fa
+            color: #202020
+
+        p
+            color: #242321
+
+        strong
+            color: #303030
+
+        span
+            color: #353535
+    
+    .bg-grey
+        .fa
+            color: #becb81
+
+        span
+            color: #68767B
+
+    .service-animate
+        @include animate-time (1s)
+        @include transform(translateY(100%))
+        opacity: 0
+
+    .service-effect
+        @include transform(translateY(0))
+        opacity: 1
+
+    strong
+        color: #D3D8BA
+        display: block
+        margin: 10px 0 0
+        text-transform: uppercase
+        letter-spacing: 3px
+
+    span
+        font-size: 14px
+        letter-spacing: 2px
+
+    .fa
+        display: block
+        font-size: 3em
+        margin-bottom: 30px
+        @include animate-time (1s)
+        @include transform(scale(0.7))
+        opacity: 0
+
+    .fa-effect
+        @include transform(scale(1))
+        opacity: 1
+
+    p
+        color: #909090
+        font-family: "Open Sans",sans-serif
+        font-size: 15px
+        font-weight: 400
+        position: relative
+        margin-top: 15px
+
+        &:after
+            content: ''
+            position: absolute
+            left: 45%
+            bottom: -30%
+            display: block
+            width: 35px
+            height: 1px
+            background: #becb81
+
+
+
+@media (max-width: 768px)
+    .service-list
+        .grid-3
+            width: 100%
+
+@media (max-width: 480px)
+    .service-list
+        .grid-3
+            padding: 80px 20px
