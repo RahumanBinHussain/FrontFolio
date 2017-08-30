@@ -1,35 +1,35 @@
 ports:
   - { 
       link: 'http://www.wow.lk',
-      path: '/assets/img/work/proj-1/1.jpg',
+      path: 'assets/img/work/proj-1/1.jpg',
       name: 'wOw.lk',
       cite: 'Online Shopping in Sri Lanka'
   }
 
   - { 
       link: 'https://www.wow.lk/wowdocroot/content/1.3/atg/tempbin/charity/index.html',
-      path: '/assets/img/work/proj-2/thumb.jpg',
+      path: 'assets/img/work/proj-2/thumb.jpg',
       name: 'Being Kind',
       cite: 'Non-profit organization'
   }
 
   - { 
       link: 'http://www.wow.lk',
-      path: '/assets/img/work/proj-4/thumb.jpg',
+      path: 'assets/img/work/proj-4/thumb.jpg',
       name: 'Fitbid',
       cite: 'Promotional Landing Page'
   }
 
   - { 
       link: 'http://www.kidney.lk',
-      path: '/assets/img/work/proj-3/thumb.jpg',
+      path: 'assets/img/work/proj-3/thumb.jpg',
       name: 'Kidney Care',
       cite: 'Portfolio blog - Dr. Dinesh'
   }
 
   - { 
       link: 'https://www.wow.lk/wowdocroot/content/1.3/atg/tempbin/neekz/index.html',
-      path: '/assets/img/work/proj-5/thumb.jpg',
+      path: 'assets/img/work/proj-5/thumb.jpg',
       name: 'NEEKZ WHIZ',
       cite: 'Portfolio blog - Aneek Ahmed'
   }
