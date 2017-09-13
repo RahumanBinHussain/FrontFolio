@@ -2,6 +2,7 @@
     background:
         image: url(../img/header-background11.jpg)
         repeat: no-repeat
+        size: cover
     text-align: center
     margin-bottom: 220px
     width: 100%
@@ -10,40 +11,34 @@
     z-index: 5000
 
 .contact-background
-    background: rgba(25, 30, 33, 0.9)
+    background: rgba(21, 21, 21, 0.8)
     width: 100%
     float: left
     padding: 125px 0
 
-.contact-left
-    width: 50%
+.contact-bro
     float: left
-    text-align: right
-    padding-right: 10%
-    border-right: 1px dashed #35444A
-    overflow: hidden
+    width: 100%
 
     h1
-        color: #b8bf9a
+        color: #fb383b
         display: block
-        font-size: 35px
-        letter-spacing: 2px
-        text-transform: uppercase
-        margin: 0
         font-family: "Slabo 27px",serif
-
-        span
-            display: block
-            font-size: 55px
+        font-size: 45px
+        letter-spacing: 2px
+        margin: 0
+        padding-right: 25px
+        text-transform: uppercase
 
     p
+        border-bottom: 1px dashed #35444a
+        color: #c0c0c0
+        display: inline-block
         font-family: "Open Sans",sans-serif
-        font-size: 18px
+        font-size: 20px
         font-weight: 300
-        letter-spacing: 0
-        word-spacing: 0
-        color: #a0a0a0
         margin-top: 10px
+        padding: 0 75px 25px
 
     .contact-animate
         @include animate-time (1s)
@@ -54,31 +49,36 @@
         @include transform(translateX(0))
         opacity: 1
 
-.contact-right
-    width: 50%
-    float: left
-
-    span
-        color: #becb81
+    h2
+        color: #fff
         display: block
-        font-size: 2em
+        font-family: "Slabo 27px",serif
+        font-size: 2.5em
         font-weight: 600
         letter-spacing: 5px
-        padding-bottom: 15%
+        padding: 5%
         word-spacing: 2px
+        margin: 0
 
     a
-        border: 1px solid #becb81
-        color: #becb81
-        font-size: 26px
-        padding: 8px 19px
-        text-transform: full-width
-        @include animate-time(320ms)
+        border: 1px solid #888888
+        color: #888888
         display: inline
+        font-size: 26px
+        padding: 12px 30px
+        text-transform: full-width
+        margin-right: 10px
+        @include border-radius(100px)
+        @include animate-time(320ms)
         
         &:hover
-            color: #101010
-            background: #becb81
+            color: #fb383b
+            background: #fff
+
+        &:before
+            font-family: fontAwesome
+            content: '\f003'
+            padding-right: 15px
 
     .contact-zoomin
         @include animate-time (1s)
@@ -110,15 +110,23 @@
 
 @media (max-width: 480px)
     .contact-background
-        padding: 100px 0
+        padding: 80px 0
         
-    .contact-right
-        span
-            font-size: 1.3em
-            letter-spacing: 3px
-            padding-bottom: 15%
+    .contact-bro
+        h1
+            font-size: 32px
+
+        p
+            font-size: 14px
+            padding: 0 15px 25px
+
+        h2
+            font-size: 1.5em
+            padding: 5% 5% 15%
 
         a
-            font-size: 22px
+            font-size: 20px
+
+
 
 

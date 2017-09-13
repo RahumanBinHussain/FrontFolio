@@ -1,8 +1,8 @@
 .service-wrapper
     width: 100%
     float: left
-    padding: 0
-    background: #181E20
+    padding: 75px 0
+    background: #151515
     text-align: center
 
 .service-list
@@ -12,31 +12,72 @@
     .grid-3
         float: left
         width: 33%
-        padding: 80px 50px
+        padding: 80px
         overflow: hidden
-        min-height: 412px
+        min-height: 425px
 
-    .bg-blue
-        background: #becb81
+    .bg-bright
+        padding: 10px
 
-        .fa
-            color: #202020
+        div
+            padding: 70px 70px 95px
+            background: #c84848
 
-        p
-            color: #242321
+        .icon
+            color: #ffffff
 
         strong
-            color: #303030
+            color: #000000
 
-        span
-            color: #353535
-    
+        .tags
+            color: #ffffff
+
+        p
+            color: #e5e5e5
+
+            &:after
+                background: #fff !important
     .bg-grey
-        .fa
-            color: #becb81
 
-        span
-            color: #68767B
+        .tags
+            color: #505050
+
+    strong
+        color: #ffffff
+        display: block
+        margin: 10px 0 0
+        text-transform: uppercase
+        letter-spacing: 2px
+        font-size: 16px
+
+    .tags
+        font-size: 13px
+        letter-spacing: 2px
+        display: inline-block
+
+    .icon
+        font-size: 3.5em
+        color: #c84848
+        display: inline-block
+
+    p
+        color: #757575
+        font-family: "Open Sans",sans-serif
+        font-size: 15px
+        font-weight: 400
+        line-height: 25px
+        margin-top: 35px
+        position: relative
+
+        &:after
+            content: ''
+            position: absolute
+            left: 45%
+            bottom: -80%
+            display: block
+            width: 35px
+            height: 1px
+            background: #fb383b
 
     .service-animate
         @include animate-time (1s)
@@ -47,46 +88,14 @@
         @include transform(translateY(0))
         opacity: 1
 
-    strong
-        color: #D3D8BA
-        display: block
-        margin: 10px 0 0
-        text-transform: uppercase
-        letter-spacing: 3px
-
-    span
-        font-size: 14px
-        letter-spacing: 2px
-
-    .fa
-        display: block
-        font-size: 3em
-        margin-bottom: 30px
+    .icon-animate
         @include animate-time (1s)
-        @include transform(scale(0.7))
+        @include transform(scale(0.5))
         opacity: 0
 
-    .fa-effect
+    .icon-effect
         @include transform(scale(1))
         opacity: 1
-
-    p
-        color: #909090
-        font-family: "Open Sans",sans-serif
-        font-size: 15px
-        font-weight: 400
-        position: relative
-        margin-top: 15px
-
-        &:after
-            content: ''
-            position: absolute
-            left: 45%
-            bottom: -30%
-            display: block
-            width: 35px
-            height: 1px
-            background: #becb81
 
 
 
@@ -99,3 +108,7 @@
     .service-list
         .grid-3
             padding: 80px 20px
+
+        .bg-bright
+            div
+                padding: 70px 20px 95px

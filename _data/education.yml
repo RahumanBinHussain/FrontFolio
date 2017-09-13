@@ -2,8 +2,8 @@ wisdomz:
   - { 
       name: 'HND IT',
       period: 'Jan 2009 - Dec 2010',
-      school: 'Advance Technical Institute',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+      school: 'SLIATE',
+      description: 'SLIATE is one of the leading government institutions in higher education sector in Sri Lanka which has been established by the parliament act no 29 of 1995, and coming under the purview of the Ministry of Higher Education and Highways.'
   }
 
   - { 
@@ -15,5 +15,5 @@ wisdomz:
   - { 
       name: 'GCE Ordinar & Advance Level',
       school: ' Welimada Muslim Maha Vidyalaya',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+      description: 'I have completed my GCE O/L (3A, 5B, 4C) and A/L (B 2S) at Welimada Muslim Maha Vidyalaya.  '
   }

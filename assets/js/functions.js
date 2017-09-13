@@ -12,20 +12,62 @@ $(function() {
 
   blowme();
 
-  winSpot();
+
+
+  winSpotHome();
 
   /*jQuery("header h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '75px' }); // Fit size*/
 
 });
 
-function winSpot() {
+function winSpotHome() {
 
   $(window).scroll(function(){
 
     var wScroll = $(this).scrollTop();
 
+    if ($('.service-wrapper').offset() != undefined) {
 
-   /* if ( wScroll > $('.experience').offset().top - ($(window).height() / 1.5 ) ) {
+      if ( wScroll > $('.service-wrapper').offset().top - ($(window).height() / 1.3 ) ) {
+
+        $('.service-animate').addClass('service-effect');
+
+        $('.icon-animate').addClass('icon-effect');
+
+      }
+    }
+
+    if ($('.contact-wrapper').offset() != undefined) {
+
+    if ( wScroll > $('.contact-wrapper').offset().top - ($(window).height() / 1.5 ) ) {
+
+      $('.contact-animate').each(function(i){
+
+        setTimeout(function(){
+
+         $('.contact-animate').addClass('contact-effect');
+
+         $('.contact-zoomin').addClass('contact-zoomout');
+
+        }, 100 * (i+1) );
+
+      });
+    }
+
+    }
+
+
+    if ($('.codepen').offset() != undefined) {
+      if ( wScroll > $('.codepen').offset().top - ($(window).height() / 2 ) ) {
+
+        $('.penspot').addClass('pengotchya');
+
+      }
+    }
+
+    if ($('.experience').offset() != undefined) {
+
+    if ( wScroll > $('.experience').offset().top - ($(window).height() / 1.5 ) ) {
 
       $('.title-animateLeft').each(function(i){
 
@@ -46,8 +88,10 @@ function winSpot() {
         }, 100 * (i+1) );
       });
 
-    }
+      }
+    } 
 
+    if ($('.education').offset() != undefined) {
     if ( wScroll > $('.education').offset().top - ($(window).height() / 1.8 ) ) {
 
       $('.title-animateLeftt').each(function(i){
@@ -70,44 +114,13 @@ function winSpot() {
 
       });
 
-    }
-*/
-    if ( wScroll > $('.service-wrapper').offset().top - ($(window).height() / 1.3 ) ) {
-
-      $('.fa-icon').addClass('fa-effect');
-
-      $('.service-animate').addClass('service-effect');
-
-    }
-
-    if ( wScroll > $('.codepen').offset().top - ($(window).height() / 2 ) ) {
-
-      $('.penspot').addClass('pengotchya');
-
-    }
-
-    if ( wScroll > $('.contact-wrapper').offset().top - ($(window).height() / 1.5 ) ) {
-
-      $('.contact-animate').each(function(i){
-
-        setTimeout(function(){
-
-         $('.contact-animate').addClass('contact-effect');
-
-         $('.contact-zoomin').addClass('contact-zoomout');
-
-        }, 100 * (i+1) );
-
-      });
-
-      
+      }
 
     }
 
   });
 
-} 
-
+}
 
 function crosmenu() {
 

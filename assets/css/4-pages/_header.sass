@@ -45,7 +45,7 @@
                 font-family: 'Electrolize', sans-serif
 
                 &:hover
-                    color: #93886b
+                    color: #c84848
 
 .menu-show
     opacity: 1
@@ -58,7 +58,7 @@
     width: 100%
     height: 100%
     padding-top: 15px
-    background-color: hsla(9, 100%, 81%, 0.07)
+
     display: table
     position:  relative
 
@@ -125,47 +125,76 @@
         text-align: center
 
         h4
-            color: #d1b248
-            font-size: 32px
-            font-weight: 500
+            color: #454545
+            font-size: 2.5em
+            font-weight: 100
             letter-spacing: 5px
             margin: 0
-            opacity: 0.7
+            opacity: 1
             text-align: center
+            font-family: "Open Sans",sans-serif
 
         h1
-            clear: both
-            color: #4D3B0D
-            letter-spacing: 0.05em
-            text-align: center
-            padding-top: 20px
-            font-size: 60px
-            font-weight: 600
+            color: #c94d4e
+            font-family: "Hind",sans-serif
+            font-size: 70px
+            font-weight: 700
+            letter-spacing: 0
             margin: 0
-            font-family: 'Electrolize', sans-serif
+            text-shadow: -2px 0 13px #c5c5c5
+            -webkit-text-shadow: -2px 0 13px #c5c5c5
 
         p
             text-align: center
             font-size: 1.5em
             font-family: "Open Sans",sans-serif
-            font-weight: 100
-            color: #bf8631
+            font-weight: 400
+            color: #202020
+            position: relative
+            top: 35px
+
+            &:before,
+            &:after
+                padding: 0 25px
+                color: #d5d5d5
+                font-size: 1.7em
+                position: relative
+                top: 5px
+                font-weight: 100
+
+            &:before
+                content: '{'
+
+            &:after
+                content: '}'
 
         a
-            border: 1px solid #808080
-            color: #202020
-            display: inline-block
-            font-size: 16px
-            font-weight: 600
-            margin-top: 50px
-            padding: 10px 20px
-            text-align: center
-            text-transform: uppercase
+            display: block
 
-            &::after
-                font-family: FontAwesome
-                content: '\f107'
-                margin-left: 10px
+            .scroller
+                color: #202020
+                font-size: 5em
+                position: absolute
+                bottom: 50px
+                text-align: center
+                @include scroller-arrow(scroller, 2s)
+
+                &:hover
+                    animation-play-state: paused
+
+                i
+                    font-weight: 100
+
+@keyframes scroller
+    0%
+        transform: translate3d(0px, 0px, 0px)
+
+    50%
+        transform: translate3d(0, 30px, 0px)
+
+    100%
+        transform: translate3d(0px, 0px, 0px)
+
 
 @media (max-width: 768px)
     .home-page
@@ -199,8 +228,12 @@
     .wrapper-background
         .header-body
             h1
-                font-size: 25px
+                font-size: 50px
+                line-height: 55px
                 padding: 20px 0 10px
 
             p
-                font-size: 1em
+                font-size: 1.2em
+
+                &:after, &:before
+                    display: none

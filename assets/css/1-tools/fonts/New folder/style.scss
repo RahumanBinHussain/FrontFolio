@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Electrolize|Open+Sans:300,400,600|Slabo+27px|Hind:300,500,600,700');
-
 @import "variables";
 
 @font-face {
   font-family: 'portfolio';
-  src:  url('#{$icomoon-font-path}/portfolio.eot?lgku13');
-  src:  url('#{$icomoon-font-path}/portfolio.eot?lgku13#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/portfolio.ttf?lgku13') format('truetype'),
-    url('#{$icomoon-font-path}/portfolio.woff?lgku13') format('woff'),
-    url('#{$icomoon-font-path}/portfolio.svg?lgku13#portfolio') format('svg');
+  src:  url('#{$icomoon-font-path}/portfolio.eot?lxjbim');
+  src:  url('#{$icomoon-font-path}/portfolio.eot?lxjbim#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/portfolio.ttf?lxjbim') format('truetype'),
+    url('#{$icomoon-font-path}/portfolio.woff?lxjbim') format('woff'),
+    url('#{$icomoon-font-path}/portfolio.svg?lxjbim#portfolio') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -43,9 +41,9 @@
     content: $icon-cloud;
   }
 }
-.icon-brand {
+.icon-iocns-04 {
   &:before {
-    content: $icon-brand;
+    content: $icon-iocns-04;
   }
 }
 .icon-iocns-05 {
@@ -53,6 +51,4 @@
     content: $icon-iocns-05;
   }
 }
-
-
 

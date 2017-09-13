@@ -53,13 +53,13 @@
     p
         font-size: 19px
         color: #656565
-        line-height: 40px
+        line-height: 36px
 
     .open_letter
         &:first-letter
             font-size: 4em
             float: left
-            margin: 18px 15px 0 0
+            margin: 14px 15px 0 0
             font-family: "Slabo 27px",serif
 
 
@@ -102,11 +102,11 @@
             @include transform(translateX(0))
             opacity: 1
 
-    i
+    .icon
         position: absolute
         top: 0
         color: #ffffff
-        font-size: 20px
+        font-size: 25px
         @include border-radius(50px)
 
 .experience
@@ -131,7 +131,7 @@
     .title
         float: right
         text-align: right
-        border-right: 1px solid #454545
+        border-right: 1px solid #334455
         padding: 0 20px 50px 0
 
         h1
@@ -152,18 +152,18 @@
         float: right
         width: 90%
         
-        i
+        .icon
             background: rgba(0, 0, 0, 0.8)
-            padding: 12px
+            padding: 10px
             left: 30.5%
 
     .edu-wrapper
         float: right
         width: 90%
 
-        i
+        .icon
             background: rgba(138, 203, 130, 0.8)
-            padding: 14px 12px
+            padding: 10px
             left: 30%
 
         .timeline-container 
@@ -253,54 +253,48 @@
             opacity: 1
 
 .skill-contents
-    width: 60%
-    text-align: left
     float: left
-    padding-left: 10%
+    text-align: left
+    width: 70%
 
     .skill-buddies
         max-width: 100%
         margin: 0 auto
 
     label
-        color: #505050
-        font-size: 17px
+        color: #fff
+        font-size: 14px
+        font-weight: 900
         line-height: 35px
-        padding-left: 10px
-        font-weight: 400
+        padding-left: 32px
+        position: absolute
+        top: 2px
+        z-index: 2000
 
 .sk-container
-    width: 100%
-    background-color: #e5e5e5
+    background-color: #ffff
     margin-bottom: 35px
+    position: relative
+    width: 100%
 
     .skills
-        text-align: right
+        background-color: #fb383b
+        border-radius: 100px
+        height: 40px
         padding-right: 0
-        height: 5px
         position: relative
-        background-color: #81ce97
+        text-align: right
 
         span
-            position: relative
-            top: -45px
-            right: -18px
-            color: #ffffff
-            color: #14d84c
-            padding:  5px 8px
-            @include border-radius(5px)
+            @include border-radius(50px)
+            background: #fff none repeat scroll 0 0
+            color: #101010
             font-size: 13px
-            border: 1px solid #81ce97
             font-weight: 600
-
-            &::after
-                border-color: #81ce97 transparent transparent
-                border-style: solid
-                border-width: 5px 5px 0
-                content: ""
-                left: 42%
-                position: absolute
-                top: 28px
+            padding: 9px 10px
+            position: relative
+            right: -17px
+            top: 3px
 
     .level-90
         width: 90%
@@ -399,7 +393,7 @@
             color: #656565
             width: 60%
             margin-top: 5%
-            font-size: 18px
+            font-size: 17px
 
 @media (max-width: 768px)
     .wrapper-background
