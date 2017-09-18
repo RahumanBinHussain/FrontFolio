@@ -8,7 +8,6 @@
     width: 100%
     float: left
     position: relative
-    z-index: 5000
 
 .contact-background
     background: rgba(21, 21, 21, 0.8)
@@ -32,13 +31,13 @@
 
     p
         border-bottom: 1px dashed #35444a
-        color: #c0c0c0
+        color: #808080
         display: inline-block
         font-family: "Open Sans",sans-serif
-        font-size: 20px
-        font-weight: 300
+        font-size: 18px
+        font-weight: 500
         margin-top: 10px
-        padding: 0 75px 25px
+        padding: 0 15% 2%
 
     .contact-animate
         @include animate-time (1s)
@@ -107,6 +106,14 @@
 
         span
             padding-bottom: 5%
+
+    .contact-bro
+        h1
+            font-size: 35px
+
+        p
+            font-size: 16px
+            padding: 0 5% 2%
 
 @media (max-width: 480px)
     .contact-background
