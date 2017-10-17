@@ -1,7 +1,7 @@
 #clients section
 clients:
 - {avatar: 'client-1.jpg', name: 'Shafraz Nizamdeen', title: 'Founder bench-team.com', file: '<p> I had the privilege of working with Rahuman for more than 3 years at Digital Commerce Lanka PVT LTD. Rahuman is proactive, result oriented, responsible and technically sound employee and he is always ready to put all his energy and time to get the job done. He has an exceptional skill in Web Front-end technologies. is a great asset to any company.</p>', logo: 'logo1.png'}
-- {avatar: 'client-2.jpg', name: 'Kanishka Herath', title: 'Senior Software Engineer at Digital Commerce Lanka (pvt) Ltd', file: '<p>  Rahuman is a highly creative ui engineer who was always on top of the latest technologies. I highly recommend Rahuman as a great ui engineer for any business venture. He has an amazing work ethic, very easy to work with, and friendly personality. He is a great asset. ', logo: 'logo2.png'}
+- {avatar: 'client-2.jpg', name: 'Kanishka Herath', title: 'Senior Software Engineer', file: '<p>  Rahuman is a highly creative ui engineer who was always on top of the latest technologies. I highly recommend Rahuman as a great ui engineer for any business venture. He has an amazing work ethic, very easy to work with, and friendly personality. He is a great asset. ', logo: 'logo2.png'}
 
 
 
