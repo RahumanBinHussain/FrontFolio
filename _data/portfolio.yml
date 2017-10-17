@@ -21,7 +21,7 @@ ports:
   }
 
   - { 
-      link: 'http://www.wow.lk',
+      link: 'http://www.wow.lk/wowdocroot/content//1.3/atg/2016/landingpages/fitbit/',
       path: 'assets/img/work/proj-4/thumb.jpg',
       name: 'Fitbid',
       cite: 'Promotional Landing Page'

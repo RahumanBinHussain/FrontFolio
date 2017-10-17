@@ -8,8 +8,7 @@ wisdomz:
 
   - { 
       name: 'Diploma in Computer Studies & hardware Engineering',
-      school: 'Beta Soft Computer Technology',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+      school: 'Beta Soft Computer Technology'
   }
 
   - { 

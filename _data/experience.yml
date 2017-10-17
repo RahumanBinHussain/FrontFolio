@@ -10,19 +10,18 @@ emprises:
       name: 'Content Admin ',
       period: 'December (2011) - Agust (2015)',
       company-name: 'Anything.lk - Digital Commerce Lanka',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+      description: 'Wow.lk was the largest e-commerce website in Sri Lanka, operated by Digital Commerce Lanka (Pvt) Ltd, a group company of Dialog Axiata PLC.'
   }
 
   - { 
       name: 'Web Designer & Front End Developer',
       period: 'April - May  (2011)',
-      company-name: 'Beta Soft Computer Technology',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+      company-name: 'Beta Soft Computer Technology'
   }
 
   - { 
       name: 'Content Admin',
       period: 'January - April  (2011)',
       company-name: 'Syntex Computer Technology',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat accusantium quos nostrum optio vero aspernatur at laborum minus explicabo non cumque numquam, reprehenderit molestiae beatae ratione fugit, dolore. Quaerat.'
+      description: 'Syntax was an institute which had done birth certificate computerized projects.'
   }
